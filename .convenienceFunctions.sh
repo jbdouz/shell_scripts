@@ -50,9 +50,8 @@ cpu() {
     if [[ $? == 1 ]]; then
       echo "the directory $destination does not exist yet, creating..."
       mkdir -p $destination
+      cp $@;
     fi
-
-    cp $@;
 
     echo "successfully created directory $destination and copied files ${@: 1:(( $no_arguments - 1 ))}"
 
