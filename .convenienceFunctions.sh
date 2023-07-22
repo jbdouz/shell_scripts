@@ -53,7 +53,7 @@ cpu() {
       cp $@;
     fi
 
-    echo "successfully created directory $destination and copied files ${@: 1:(( $no_arguments - 1 ))}"
+    echo "successfully created directory $destination and copied files ${@: 1:(( $no_arguments - 1 ))}";
 
   else 
     echo "Usage: cpu {files} <destination>"
