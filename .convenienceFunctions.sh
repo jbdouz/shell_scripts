@@ -99,7 +99,7 @@ gitinit() {
 
   echo "# $1" >> README.md
   git init
-  git add README.md
+  git add -A
   git commit -m "first commit"
   git branch -M main
   git remote add origin git@github.com:jbdouz/$1.git
