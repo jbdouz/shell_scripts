@@ -11,6 +11,7 @@ mcd() {
   fi
 }
 
+# upgraded version of original terminal commands for more convenient use
 # an upgraded version of touch, will create the necessary path if not existent
 touchu() {
   # check for right parameter
@@ -33,6 +34,31 @@ touchu() {
 
     mkdir -p $file_path
     touch $1
+  fi
+}
+
+# upgraded cp, if the destination does not exist yet, will create the necessary path
+cpu() {
+  destination=${@: -1}
+  no_arguments=$#
+
+  pattern=".*/.*/?"
+  if [[ $destination =~ $pattern ]]; then 
+    echo "copying to desination destination: $destination"
+    cp $@;
+
+    if [[ $? == 1 ]]; then
+      echo "the directory $destination does not exist yet, creating..."
+      mkdir -p $destination
+    fi
+
+    cp $@;
+
+    echo "successfully created directory $destination and copied files ${@: 1:(( $no_arguments - 1 ))}"
+
+  else 
+    echo "Usage: cpu {files} <destination>"
+    return 1
   fi
 
 }

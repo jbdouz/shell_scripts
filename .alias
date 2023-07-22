@@ -4,6 +4,7 @@ alias ll="ls -lah"
 alias mv="mv -i"
 alias gs="git status"
 
+# locations
 alias school="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses"
 alias comp20008="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp20008"
 alias comp90041="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp90041"
@@ -18,3 +19,5 @@ alias gd="cd ~/jbdouz@gmail.com - Google Drive/My Drive/"
 gd="~/jbdouz@gmail.com - Google Drive/My Drive/"
 alias dt="cd ~/Desktop/"
 alias dl="cd ~/Downloads/"
+
+alias chrome="open -a 'Google Chrome'"
