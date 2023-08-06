@@ -69,15 +69,21 @@ xable() {
     fi
 
     for var in "$@"; do
-        chmod +x $var
+        chmod +x "$var"
     done
 }
 
 # git related
 gitacp() {
+    if [[ $# == 1 ]];
+      then branch=main
+    else
+      branch=$2
+    fi
+
     git add -A
-    git commit -m $1
-    git push -u origin main 
+    git commit -m "$1"
+    git push -u origin "$branch" 
 }
 
 gitinit() {
