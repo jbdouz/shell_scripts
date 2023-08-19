@@ -4,16 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+ipywidgets = "*"
 jupyterlab = ">=3.0.0,<4.0.0a0"
 jupyterlab-lsp = "*"
-python-lsp-server = {version = "*", extras = ["all"]}
-numpy = "*"
-pydotplus = "*"
-ipywidgets = "*"
 matplotlib = "*"
+numpy = "*"
 pandas = "*"
-scipy = "*"
+pydotplus = "*"
+python-lsp-server = {version = "*", extras = ["all"]}
 scikit-learn = "*"
+scipy = "*"
+seaborn = "*"
 
 [dev-packages]
 
