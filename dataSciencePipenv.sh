@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cp ~/DefaultPipfile ./Pipfile
+cp ~/shell_scripts/DefaultPipfile ./Pipfile
 pipenv install 
 
 
