@@ -11,6 +11,9 @@ numpy = "*"
 pydotplus = "*"
 ipywidgets = "*"
 matplotlib = "*"
+pandas = "*"
+scipy = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
