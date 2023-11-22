@@ -50,20 +50,32 @@ cpu() {
     if [[ $? == 1 ]]; then
       echo "the directory $destination does not exist yet, creating..."
       mkdir -p $destination
-      cp $@;
+      cp "$@";
     fi
 
-    echo "successfully created directory $destination and copied files ${@: 1:(( $no_arguments - 1 ))}";
-
+    echo "successfully created directory $destination and copied files ${@:1:$(( $no_arguments - 1 ))}";
   else 
     echo "Usage: cpu {files} <destination>"
     return 1
   fi
+}
 
+cpRecentDl() {
+  # get the most recent modified file name in Downloads
+  recentDl=$(ls -t ~/Downloads | head -n1)
+
+  # check if the file exists
+  if [ -z "$recentDl" ]; then 
+    echo "No file found in ~/Downloads/"
+    exit 1
+  fi
+
+  mv "$HOME/Downloads/$recentDl" .
+  echo "successfully moved $recentDl to ~/Downloads/"
 }
 
 xable() {
-    if [[ $# < 1 ]]; then
+    if [[ $# -lt 1 ]]; then
         echo "Please provide at least one file to be modified"
         return 1
     fi
@@ -136,5 +148,6 @@ jekyllinit() {
   gitinit $2
 
   bundler exec jekyll serve
-  
 }
+
+
