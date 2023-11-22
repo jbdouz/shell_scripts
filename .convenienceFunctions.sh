@@ -60,7 +60,7 @@ cpu() {
   fi
 }
 
-cpRecentDl() {
+mvRecentDl() {
   # get the most recent modified file name in Downloads
   recentDl=$(ls -t ~/Downloads | head -n1)
 
@@ -71,7 +71,7 @@ cpRecentDl() {
   fi
 
   mv "$HOME/Downloads/$recentDl" .
-  echo "successfully moved $recentDl to ~/Downloads/"
+  echo "successfully moved $recentDl to $(pwd)"
 }
 
 xable() {
