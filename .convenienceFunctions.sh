@@ -103,6 +103,12 @@ xable() {
     done
 }
 
+## Data Science
+pipenvDS() {
+  cp ~/shell_scripts/DefaultPipfile ./Pipfile
+  pipenv install 
+}
+
 # git related
 gitacp() {
     if [[ $# == 1 ]];
