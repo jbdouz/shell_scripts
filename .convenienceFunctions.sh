@@ -61,17 +61,35 @@ cpu() {
 }
 
 mvRecentDl() {
-  # get the most recent modified file name in Downloads
-  recentDl=$(ls -t ~/Downloads | head -n1)
 
-  # check if the file exists
-  if [ -z "$recentDl" ]; then 
-    echo "No file found in ~/Downloads/"
-    exit 1
+  # is no argument is provided, perform the action once
+  if [[ $# == 0 ]]; then 
+    n=1 
+  else
+    # check the input is an integer
+    if ! [[ "$1" =~ ^[0-9]+$ ]]; then
+      echo "Please provide an integer as the number of files you want to move"
+      return 1
+    else 
+      n=$1
+    fi
   fi
 
-  mv "$HOME/Downloads/$recentDl" .
-  echo "successfully moved $recentDl to $(pwd)"
+  for (( i=0; i<n; i++)); do
+
+    # get the most recent modified file name in Downloads
+    recentDl=$(ls -t ~/Downloads | head -n1)
+
+    # check if the file exists
+    if [ -z "$recentDl" ]; then 
+      echo "No file found in ~/Downloads/"
+      return 1
+    fi
+
+    mv "$HOME/Downloads/$recentDl" .
+    echo "successfully moved $recentDl to $(pwd)"
+
+  done
 }
 
 xable() {
