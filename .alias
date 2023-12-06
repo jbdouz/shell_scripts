@@ -23,6 +23,7 @@ alias repo="cd ~/github_local_repos/"
 alias git_local="cd ~/github_local_repos/"
 
 alias gd="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/"
+alias gd_im="cd ~/jonas.sun@inmoment.com - Google Drive/Other computers/My MacBook Pro/projects/"
 gd="~/jbdouz@gmail.com - Google Drive/My Drive/"
 alias dt="cd ~/Desktop/"
 alias dl="cd ~/Downloads/"
