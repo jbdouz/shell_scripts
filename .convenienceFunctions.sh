@@ -110,15 +110,17 @@ mvRecentScreenshot() {
   for (( i=0; i<n; i++)); do
 
     # get the most recent modified file name in Downloads
-    recentScreenshot=$(ls -t ~/Desktop/*.png | head -n1)
+    recentScreenshot=$(find ~/Desktop -maxdepth 1 -name '*.png' | sort -z -r | head -n 1)
+    # recentScreenshot=$(ls -t ~/Desktop/*.png | head -n1)
+    # recentScreenshot=$(echo "$recentScreenshot" | sed 's/ /\\ /g')
 
     # check if the file exists
     if [ -z "$recentScreenshot" ]; then 
-      echo "No file found in ~/Downloads/"
+      echo "No png file found in ~/Desktop/"
       return 1
     fi
 
-    mv "$HOME/Desktop/$recentScreenshot" .
+    mv "$recentScreenshot" .
     echo "successfully moved $recentScreenshot to $(pwd)"
 
   done
