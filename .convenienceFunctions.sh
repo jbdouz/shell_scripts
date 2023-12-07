@@ -92,6 +92,38 @@ mvRecentDl() {
   done
 }
 
+mvRecentScreenshot() {
+
+  # is no argument is provided, perform the action once
+  if [[ $# == 0 ]]; then 
+    n=1 
+  else
+    # check the input is an integer
+    if ! [[ "$1" =~ ^[0-9]+$ ]]; then
+      echo "Please provide an integer as the number of files you want to move"
+      return 1
+    else 
+      n=$1
+    fi
+  fi
+
+  for (( i=0; i<n; i++)); do
+
+    # get the most recent modified file name in Downloads
+    recentScreenshot=$(ls -t ~/Desktop/*.png | head -n1)
+
+    # check if the file exists
+    if [ -z "$recentScreenshot" ]; then 
+      echo "No file found in ~/Downloads/"
+      return 1
+    fi
+
+    mv "$HOME/Desktop/$recentScreenshot" .
+    echo "successfully moved $recentScreenshot to $(pwd)"
+
+  done
+}
+
 xable() {
     if [[ $# -lt 1 ]]; then
         echo "Please provide at least one file to be modified"
