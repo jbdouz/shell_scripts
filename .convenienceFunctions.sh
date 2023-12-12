@@ -110,7 +110,7 @@ mvRecentScreenshot() {
   for (( i=0; i<n; i++)); do
 
     # get the most recent modified file name in Downloads
-    recentScreenshot=$(find ~/Desktop -maxdepth 1 -name '*.png' | sort -z -r | head -n1)
+    recentScreenshot=$(find ~/Desktop -maxdepth 1 -name '*.png' -print0 | xargs -0 ls -t | head -n1)
     # recentScreenshot=$(ls -t ~/Desktop/*.png | head -n1)
     # recentScreenshot=$(echo "$recentScreenshot" | sed 's/ /\\ /g')
 
