@@ -5,8 +5,8 @@ name = "pypi"
 
 [packages]
 ipywidgets = "*"
-jupyterlab = ">=3.0.0,<4.0.0a0"
-jupyterlab-lsp = "*"
+jupyterlab = "*"
+jupyterlab-lsp = "==5.0.1"
 matplotlib = "*"
 numpy = "*"
 pandas = "*"

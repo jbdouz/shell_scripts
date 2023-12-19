@@ -139,8 +139,13 @@ xable() {
 
 ## Data Science
 pipenvDS() {
-  cp ~/shell_scripts/DefaultPipfile ./Pipfile
+  cp ~/shell_scripts/dsPipfile ./Pipfile
   pipenv install 
+}
+
+pipenvNLP() {
+  cp ~/shell_scripts/nlpPipfile ./Pipfile
+  pipenv install
 }
 
 # git related
