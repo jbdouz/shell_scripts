@@ -92,7 +92,7 @@ mvRecentDl() {
   done
 }
 
-mvRecentScreenshot() {
+mvRecentSS() {
 
   # is no argument is provided, perform the action once
   if [[ $# == 0 ]]; then 
