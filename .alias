@@ -23,9 +23,12 @@ alias gorepo="cd ~/github_local_repos/"
 alias gogit_local="cd ~/github_local_repos/"
 
 alias gogd="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/"
-gd="~/jbdouz@gmail.com - Google Drive/My Drive/"
+gd="~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/"
 alias gogd_im="cd ~/jonas.sun@inmoment.com\ -\ Google\ Drive/Other\ computers/My\ MacBook\ Pro/projects/"
-gd_im="/Users/shengyangsun/jonas.sun@inmoment.com - Google Drive/Other computers/My MacBook Pro/projects/"
+gd_im="/Users/shengyangsun/jonas.sun@inmoment.com\ -\ Google\ Drive/Other\ computers/My\ MacBook\ Pro/projects/"
+alias gogd_u="cd ~/shengyangs@student.unimelb.edu.au\ -\ Google\ Drive/My\ Drive/"
+gd_u="~/shengyangs@student.unimelb.edu.au\ -\ Google\ Drive/My\ Drive/"
+
 alias godt="cd ~/Desktop/"
 alias godl="cd ~/Downloads/"
 
