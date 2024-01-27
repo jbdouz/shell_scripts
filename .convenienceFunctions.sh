@@ -96,7 +96,7 @@ mvRecentDl() {
       return 1
     fi
 
-    if [[ -z "$newName" ]]; then
+    if [[ -n "$newName" ]]; then
       mv "$HOME/Downloads/$recentDl" ./"$newName"
     else
       mv "$HOME/Downloads/$recentDl" .
@@ -144,7 +144,7 @@ mvRecentSS() {
       return 1
     fi
 
-    if [[ -z "$newName" ]]; then
+    if [[ -n "$newName" ]]; then
       mv "$recentScreenshot" ./"$newName"
     else
       mv "$recentScreenshot" .
