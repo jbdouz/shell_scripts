@@ -65,13 +65,23 @@ mvRecentDl() {
   # is no argument is provided, perform the action once
   if [[ $# == 0 ]]; then 
     n=1 
-  else
+  elif [[ $# == 1 ]]; then # could be # of files to move or new name for the file
     # check the input is an integer
+    if [[ "$1" =~ ^[0-9]+$ ]]; then
+      n=$1
+    elif [[ "$1" =~ ^[A-Za-z0-9_]+\.[A-Za-z0-9]+$ ]]; then
+      n=1
+      newName=$1
+    fi
+  elif [[ $# -ge 2 ]]; then # first argument # of files, rest name of the files
     if ! [[ "$1" =~ ^[0-9]+$ ]]; then
-      echo "Please provide an integer as the number of files you want to move"
+      echo "The first argument should be the number of files you want to move"
       return 1
     else 
       n=$1
+      if [[ $n != $(($#-1)) ]]; then
+        echo "You need to provide same number of new file names as the number of files you want to move"
+      fi
     fi
   fi
 
@@ -86,7 +96,7 @@ mvRecentDl() {
       return 1
     fi
 
-    mv "$HOME/Downloads/$recentDl" .
+    mv "$HOME/Downloads/$recentDl" ./"$newName"
     echo "successfully moved $recentDl to $(pwd)"
 
   done
@@ -101,7 +111,7 @@ mvRecentSS() {
     # check the input is an integer
     if [[ "$1" =~ ^[0-9]+$ ]]; then
       n=$1
-    elif [[ "$1" =~ ^[A-Za-z0-9]+\.[A-Za-z0-9]+$ ]]; then
+    elif [[ "$1" =~ ^[A-Za-z0-9_]+\.[A-Za-z0-9]+$ ]]; then
       n=1
       newName=$1
     fi
