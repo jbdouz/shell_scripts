@@ -96,7 +96,11 @@ mvRecentDl() {
       return 1
     fi
 
-    mv "$HOME/Downloads/$recentDl" ./"$newName"
+    if [[ -z "$newName" ]]; then
+      mv "$HOME/Downloads/$recentDl" ./"$newName"
+    else
+      mv "$HOME/Downloads/$recentDl" .
+    fi
     echo "successfully moved $recentDl to $(pwd)"
 
   done
@@ -140,7 +144,11 @@ mvRecentSS() {
       return 1
     fi
 
-    mv "$recentScreenshot" ./"$newName"
+    if [[ -z "$newName" ]]; then
+      mv "$recentScreenshot" ./"$newName"
+    else
+      mv "$recentScreenshot" .
+    fi
     echo "successfully moved $recentScreenshot to $(pwd)"
 
   done
