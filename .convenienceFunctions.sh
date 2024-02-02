@@ -88,7 +88,7 @@ mvRecentDl() {
   for (( i=0; i<n; i++)); do
 
     # get the most recent modified file name in Downloads
-    recentDl=$(ls -t ~/Downloads | head -n1)
+    recentDl=$(find ~/Desktop -maxdepth 1 -name '*.png' -print0 | xargs -0 ls -t | head -n1)
 
     # check if the file exists
     if [ -z "$recentDl" ]; then 
