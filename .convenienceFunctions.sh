@@ -105,9 +105,9 @@ mvRecentDl() {
           return 1
         fi
       fi
-      mv "$HOME/Downloads/$recentDl" ./"$newName"
+      mv "$recentDl" ./"$newName"
     else
-      mv "$HOME/Downloads/$recentDl" .
+      mv "$recentDl" .
     fi
     echo "successfully moved $recentDl to $(pwd)"
 
