@@ -88,7 +88,7 @@ mvRecentDl() {
   for (( i=0; i<n; i++)); do
 
     # get the most recent modified file name in Downloads
-    recentDl=$(find ~/Desktop -maxdepth 1 -name '*.png' -print0 | xargs -0 ls -t | head -n1)
+    recentDl=$(find ~/Downloads/ -maxdepth 1 -print0 | xargs -0 ls -t | head -n1)
 
     # check if the file exists
     if [ -z "$recentDl" ]; then 
@@ -97,6 +97,14 @@ mvRecentDl() {
     fi
 
     if [[ -n "$newName" ]]; then
+      if [[ -e "./$newName" ]]; then 
+        echo "$newName already exists in the target directory. Overwrite? (y/n)"
+        read -r answer
+        if [[ "$answer" != "y" ]]; then
+          echo "Aborting."
+          return 1
+        fi
+      fi
       mv "$HOME/Downloads/$recentDl" ./"$newName"
     else
       mv "$HOME/Downloads/$recentDl" .
@@ -145,6 +153,14 @@ mvRecentSS() {
     fi
 
     if [[ -n "$newName" ]]; then
+      if [[ -e "./$newName" ]]; then 
+        echo "$newName already exists in the target directory. Overwrite? (y/n)"
+        read -r answer
+        if [[ "$answer" != "y" ]]; then
+          echo "Aborting."
+          return 1
+        fi
+      fi
       mv "$recentScreenshot" ./"$newName"
     else
       mv "$recentScreenshot" .
