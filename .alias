@@ -24,7 +24,7 @@ alias side_projects="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/side_proj
 alias repo="cd ~/github_local_repos/"
 
 alias gogd="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/"
-gd="/Users/shengyangsun/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive"
+gd="/Users/shengyangsun/jbdouz@gmail.com - Google Drive/My Drive"
 alias goim="cd /Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other\ computers/My\ MacBook\ Pro/projects_copy"
 gdim="/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other\ computers/My\ MacBook\ Pro/projects_copy"
 alias gouni="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses"
