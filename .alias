@@ -20,10 +20,8 @@ alias mast90106="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/
 
 alias gojob="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/jobs"
 
-alias goside_projects="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/side_projects/"
-alias gorepo="cd ~/github_local_repos/"
-
-alias gogit_local="cd ~/github_local_repos/"
+alias side_projects="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/side_projects/"
+alias repo="cd ~/github_local_repos/"
 
 alias gogd="cd ~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/"
 gd="~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/"
