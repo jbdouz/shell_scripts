@@ -5,35 +5,35 @@ alias mv="mv -i"
 # alias gs="git status"
 
 # locations
-alias comp20008='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp20008"'
-alias comp90041='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp90041"'
-alias mast90139='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/mast90139"'
-alias info90002='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/info90002"'
-alias comp90054='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp90054_ai_planning_for_autonomy"'
-alias comp90038='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp90038_algo_and_complexity"'
-alias comp90051='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp90051_statistical_machine_learning"'
-alias mast90083='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/mast90083_computational_statistics_and_data_science"'
-alias comp90024='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp90024_cluster_and_cloud_computing"'
-alias comp90042='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp90042_NLP"'
-alias comp90050='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/comp90050_advanced_database_system"'
-alias mast90106='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses/mast90106"'
+alias comp20008='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/comp20008"'
+alias comp90041='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/comp90041"'
+alias mast90139='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/mast90139"'
+alias info90002='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/info90002"'
+alias comp90054='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/comp90054_ai_planning_for_autonomy"'
+alias comp90038='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/comp90038_algo_and_complexity"'
+alias comp90051='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/comp90051_statistical_machine_learning"'
+alias mast90083='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/mast90083_computational_statistics_and_data_science"'
+alias comp90024='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/comp90024_cluster_and_cloud_computing"'
+alias comp90042='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/comp90042_NLP"'
+alias comp90050='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/comp90050_advanced_database_system"'
+alias mast90106='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/mast90106"'
 
-alias gojob='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/jobs"'
+alias gojob='cd "~/jbdouz@gmail.com - Google Drive/My Drive/jobs"'
 
-alias side_projects='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/side_projects/"'
+alias side_projects='cd "~/jbdouz@gmail.com - Google Drive/My Drive/side_projects/"'
 alias repo="cd ~/github_local_repos/"
 
-alias gogd='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/"'
+alias gogd='cd "~/jbdouz@gmail.com - Google Drive/My Drive/"'
 gd="/Users/shengyangsun/jbdouz@gmail.com - Google Drive/My Drive"
 
-alias goimSelf='cd "/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other\ computers/My\ MacBook\ Pro/projects_copy"'
+alias goimSelf='cd "/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/projects_copy"'
 gdimSelf="/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/projects_copy"
 alias goimShare='cd "/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients"'
 gdimShare="/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients"
 
-alias gouni='cd "~/jbdouz@gmail.com\ -\ Google\ Drive/My\ Drive/UmelbCourses"'
+alias gouni='cd "~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses"'
 gduni="~/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses"
-alias gou='cd "~/shengyangs@student.unimelb.edu.au\ -\ Google\ Drive/My\ Drive/"'
+alias gou='cd "~/shengyangs@student.unimelb.edu.au - Google Drive/My Drive/"'
 gdu="~/shengyangs@student.unimelb.edu.au - Google Drive/My Drive"
 
 alias godt="cd ~/Desktop/"
