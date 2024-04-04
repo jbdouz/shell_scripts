@@ -172,6 +172,19 @@ mvRecentSS() {
   done
 }
 
+fileNameSub() {
+  # find files with patter $1 
+  # Substitute $2 in those names with $3
+  find . -maxdepth 1 -type f -name "*$1*" | while IFS= read -r fname; do
+    newname=$(echo "$fname" | sed "s/$2/$3/g")
+    if [ -e "$newname" ]; then
+      echo "$newname already exists, making a backup of that" 
+      cp "$newname" "$newname.bak"
+    fi
+    mv -f "$fname" "$newname"
+  done
+}
+
 xable() {
     if [[ $# -lt 1 ]]; then
         echo "Please provide at least one file to be modified"
