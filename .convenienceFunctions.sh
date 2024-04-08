@@ -175,6 +175,11 @@ mvRecentSS() {
 fileNameSub() {
   # find files with patter $1 
   # Substitute $2 in those names with $3
+  
+  if [[ "$1" = "--help" || "$1" = "-h" ]]; then 
+    echo "file must contain pattern <\$1>, the function substitutes <\$2> with <\$3>"
+  fi
+
   find . -maxdepth 1 -type f -name "*$1*" | while IFS= read -r fname; do
     newname=$(echo "$fname" | sed "s/$2/$3/g")
     if [ -e "$newname" ]; then
