@@ -29,12 +29,12 @@ gd="/Users/shengyangsun/jbdouz@gmail.com - Google Drive/My Drive"
 alias goimSelf='cd "/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/"'
 gdimSelf="/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/"
 alias goimShare='cd "/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients"'
-gdimShare="/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients"
+gdimShare="/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients/"
 
 alias gouni='cd ~"/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses"'
-gduni=~"/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses"
+gduni=~"/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/"
 alias gou='cd ~"/shengyangs@student.unimelb.edu.au - Google Drive/My Drive/"'
-gdu=~"/shengyangs@student.unimelb.edu.au - Google Drive/My Drive"
+gdu=~"/shengyangs@student.unimelb.edu.au - Google Drive/My Drive/"
 
 alias godt="cd ~/Desktop/"
 alias godl="cd ~/Downloads/"
