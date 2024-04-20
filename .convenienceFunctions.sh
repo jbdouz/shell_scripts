@@ -201,7 +201,9 @@ xable() {
     done
 }
 
-## Data Science
+###############################
+## pipenv virtual environment #
+###############################
 pipenvDS() {
   cp ~/shell_scripts/dsPipfile ./Pipfile
   pipenv install 
@@ -212,7 +214,9 @@ pipenvNLP() {
   pipenv install
 }
 
-# git related
+###############
+# git related #
+###############
 gitacp() {
     if [[ $# == 1 ]];
       then branch=main
@@ -251,8 +255,32 @@ gitinit() {
   git push -u origin main
 }
 
-# frontend framework
-# Jekyll
+# automatically git pull whenever I enter into a git repo
+# (god know how many times it has caused me great annoyance when I forget to git pull and just start modifying the repo)
+function auto_git_pull() {
+    # Check if the current directory is in a Git repository
+    if git rev-parse --git-dir > /dev/null 2>&1; then
+        # Optional: Check if the current branch is your main branch, e.g., 'main' or 'master'
+        local branch="$(git rev-parse --abbrev-ref HEAD)"
+        if [[ "$branch" == "main" || "$branch" == "master" ]]; then
+            # Perform a git pull
+            echo "Pulling changes into $branch..."
+            git pull
+        else
+            echo "Not on main/master branch, not pulling automatically."
+        fi
+    fi
+}
+# RPOMPT_COMMAND is executed just before the shell prompt is displayed
+export PROMPT_COMMAND="auto_git_pull"
+
+######################
+# frontend framework #
+######################
+
+##########
+# Jekyll #
+##########
 jekyllinit() {
   if [[ $# != 2 ]]; then
     echo "Usage: jekyllinit <project_name> <remote_repo_name>"
