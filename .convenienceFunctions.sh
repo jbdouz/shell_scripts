@@ -271,8 +271,6 @@ function auto_git_pull() {
         fi
     fi
 }
-# RPOMPT_COMMAND is executed just before the shell prompt is displayed
-export PROMPT_COMMAND="auto_git_pull"
 
 ######################
 # frontend framework #
