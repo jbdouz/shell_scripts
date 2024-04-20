@@ -271,6 +271,12 @@ function auto_git_pull() {
         fi
     fi
 }
+# autoload -U add-zsh-hook
+# add-zsh-hook precmd auto_git_pull
+function cd() {
+  builtin cd "$@" && auto_git_pull
+}
+
 
 ######################
 # frontend framework #
