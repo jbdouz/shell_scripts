@@ -24,17 +24,17 @@ alias side_projects='cd ~"/jbdouz@gmail.com - Google Drive/My Drive/side_project
 alias repo="cd ~/github_local_repos/"
 
 alias gogd='cd ~"/jbdouz@gmail.com - Google Drive/My Drive/"'
-gd="/Users/shengyangsun/jbdouz@gmail.com - Google Drive/My Drive"
+gd="$HOME/jbdouz@gmail.com - Google Drive/My Drive"
 
-alias goimSelf='cd "/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/"'
-gdimSelf="/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/"
-alias goimShare='cd "/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients"'
-gdimShare="/Users/shengyangsun/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients/"
+alias goimSelf='cd ~"/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/"'
+gdimSelf="$HOME/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/"
+alias goimShare='cd ~"/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients"'
+gdimShare="$HOME/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients/"
 
 alias gouni='cd ~"/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses"'
-gduni=~"/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/"
+gduni="$HOME/jbdouz@gmail.com - Google Drive/My Drive/UmelbCourses/"
 alias gou='cd ~"/shengyangs@student.unimelb.edu.au - Google Drive/My Drive/"'
-gdu=~"/shengyangs@student.unimelb.edu.au - Google Drive/My Drive/"
+gdu="$HOME/shengyangs@student.unimelb.edu.au - Google Drive/My Drive/"
 
 alias godt="cd ~/Desktop/"
 alias godl="cd ~/Downloads/"
