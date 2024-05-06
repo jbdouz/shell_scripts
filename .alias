@@ -43,3 +43,4 @@ alias chrome="open -a 'Google Chrome'"
 alias safari="open -a 'safari'"
 
 alias configKeyboard="chrome https://usevia.app/"
+
