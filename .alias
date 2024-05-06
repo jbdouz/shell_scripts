@@ -40,3 +40,4 @@ alias godt="cd ~/Desktop/"
 alias godl="cd ~/Downloads/"
 
 alias chrome="open -a 'Google Chrome'"
+alias safari="open -a 'safari'"
