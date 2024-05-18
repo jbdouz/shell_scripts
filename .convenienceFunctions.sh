@@ -218,15 +218,23 @@ pipenvNLP() {
 # git related #
 ###############
 gitacp() {
-    if [[ $# == 1 ]];
-      then branch=main
-    else
-      branch=$2
-    fi
+  # Check for '-h' flag or no arguments
+  if [[ "$1" == "-h" ]] || [[ $# -eq 0 ]]; then
+    echo "Usage: gitacp <commit message> <branch_name>"
+    echo "If no branch is specified, 'main' is used as default."
+    return
+  fi
 
-    git add -A
-    git commit -m "$1"
-    git push -u origin "$branch" 
+
+  if [[ $# == 1 ]];
+    then branch=main
+  else
+    branch=$2
+  fi
+
+  git add -A
+  git commit -m "$1"
+  git push -u origin "$branch" 
 }
 
 gitinit() {
