@@ -226,15 +226,17 @@ gitacp() {
   fi
 
 
-  if [[ $# == 1 ]];
-    then branch=main
-  else
+  if [[ $# == 2 ]]; then
     branch=$2
   fi
 
   git add -A
   git commit -m "$1"
-  git push -u origin "$branch" 
+  if [[ -v $branch ]]; then
+    git push -u origin "$branch" 
+  else
+    git push
+  fi
 }
 
 gitinit() {
