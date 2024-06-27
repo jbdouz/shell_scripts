@@ -182,6 +182,7 @@ fileNameSub() {
 
   find . -maxdepth 1 -type f -name "*$1*" | while IFS= read -r fname; do
     newname=$(echo "$fname" | sed "s/$2/$3/g")
+    # newname=${fname//2/3}
     if [ -e "$newname" ]; then
       echo "$newname already exists, making a backup of that" 
       cp "$newname" "$newname.bak"
