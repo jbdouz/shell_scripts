@@ -144,13 +144,13 @@ mvRecentSS() {
   for (( i=0; i<n; i++)); do
 
     # get the most recent modified file name in Downloads
-    recentScreenshot=$(find ~/Documents/ -maxdepth 1 -name 'Screentshot*.png' -print0 | xargs -0 ls -t | head -n1)
+    recentScreenshot=$(find ~/Documents/ -maxdepth 1 -name 'Screenshot*.png' -print0 | xargs -0 ls -t | head -n1)
     # recentScreenshot=$(ls -t ~/Desktop/*.png | head -n1)
     # recentScreenshot=$(echo "$recentScreenshot" | sed 's/ /\\ /g')
 
     # check if the file exists
     if [ -z "$recentScreenshot" ]; then 
-      echo "No png file found in ~/Desktop/"
+      echo "No png file found in ~/Documents/"
       return 1
     fi
 
