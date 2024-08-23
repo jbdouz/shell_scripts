@@ -10,6 +10,7 @@ jupyterlab-lsp = "==5.0.1"
 matplotlib = "*"
 numpy = "*"
 pandas = "*"
+openpyxl = "*"
 pydotplus = "*"
 python-lsp-server = {version = "*", extras = ["all"]}
 scikit-learn = "*"
