@@ -28,8 +28,8 @@ alias repo="cd ~/github_local_repos/"
 alias gogd='cd ~"/jbdouz@gmail.com - Google Drive/My Drive/"'
 gd="$HOME/jbdouz@gmail.com - Google Drive/My Drive"
 
-alias goimSelf='cd ~"/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/"'
-gdimSelf="$HOME/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/"
+alias goimSelf='cd ~"/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/projects_copy/"'
+gdimSelf="$HOME/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/projects_copy/"
 alias goimShare='cd ~"/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients"'
 gdimShare="$HOME/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Shared drives/Clients/"
 
