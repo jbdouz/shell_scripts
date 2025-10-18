@@ -25,8 +25,8 @@ alias gojob='cd ~"/jbdouz@gmail.com - Google Drive/My Drive/jobs"'
 alias side_projects='cd ~"/jbdouz@gmail.com - Google Drive/My Drive/side_projects/"'
 alias repo="cd ~/github_local_repos/"
 
-alias gogd='cd ~"/jbdouz@gmail.com - Google Drive/My Drive/"'
-gd="$HOME/jbdouz@gmail.com - Google Drive/My Drive"
+alias gogd='cd ~"/Google Drive/My Drive/"'
+gd="$HOME/Google Drive/My Drive"
 
 alias goimSelf='cd ~"/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/projects_copy/"'
 gdimSelf="$HOME/Library/CloudStorage/GoogleDrive-jonas.sun@inmoment.com/Other computers/My MacBook Pro/projects_copy/"
